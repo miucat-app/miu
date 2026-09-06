@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Miu 翻譯小貓 | LINE 群組即時翻譯機器人</title>
+<meta name="description" content="Miu 翻譯小貓是一隻 LINE 群組即時翻譯機器人,自動偵測語言並即時翻譯文字與語音訊息,讓跨國家庭、朋友、跨境買賣溝通沒有距離。">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Miu 翻譯小貓 | LINE 群組即時翻譯機器人">
+<meta property="og:description" content="自動偵測群組裡的語言,文字、語音即時翻譯,讓聊天沒有語言距離。">
+<meta property="og:image" content="https://clairelin1014.github.io/miu/assets/img/og-banner.png">
+<meta property="og:url" content="https://clairelin1014.github.io/miu/">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/png" href="assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Serif+TC:wght@700;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <img src="assets/img/miu-icon.png" alt="Miu icon">
+      <span>Miu 翻譯小貓</span>
+    </a>
+    <nav class="links">
+      <a href="#features" data-i18n="nav.features">功能特色</a>
+      <a href="#languages" data-i18n="nav.languages">支援語言</a>
+      <a href="#how" data-i18n="nav.how">使用教學</a>
+      <a href="#faq" data-i18n="nav.faq">常見問題</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
+      <a class="btn btn-primary nav-cta" href="https://line.me/R/ti/p/@095zareu?ts=09051537&amp;oat_content=url" target="_blank" rel="noopener" data-i18n="nav.cta">加 LINE 好友</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">🐾 <span data-i18n="hero.eyebrow">LINE 群組即時翻譯機器人</span></span>
+        <h1 data-i18n-html="hero.title">讓聊天,<br>沒有<span class="accent">語言距離</span></h1>
+        <p class="lead" data-i18n="hero.lead">Miu 翻譯小貓會自動偵測群組裡的語言,即時翻成大家都看得懂的語言——文字、語音通通支援,一個機器人搞定跨國溝通。</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="https://line.me/R/ti/p/@095zareu?ts=09051537&amp;oat_content=url" target="_blank" rel="noopener" data-i18n="hero.cta1">🐱 加 Miu 為 LINE 好友</a>
+          <a class="btn btn-ghost" href="#how" data-i18n="hero.cta2">看看怎麼用</a>
+        </div>
+        <div class="hero-badges">
+          <div class="badge">🌐 <span data-i18n="hero.badge1">支援 13 種語言</span></div>
+          <div class="badge">🎙️ <span data-i18n="hero.badge2">語音自動翻譯</span></div>
+          <div class="badge">👨‍👩‍👧‍👦 <span data-i18n="hero.badge3">跨國家庭愛用</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="blob"></div>
+        <img src="assets/img/mascot-hero.png" alt="Miu 翻譯小貓吉祥物">
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features">
+    <div class="wrap">
+      <div class="section-head fade-in">
+        <span class="eyebrow" data-i18n="features.eyebrow">功能特色</span>
+        <h2 data-i18n="features.title">一隻機器人,搞定跨語言聊天</h2>
+        <p data-i18n="features.sub">不管是家人、朋友還是工作團隊,Miu 都幫你把語言的距離縮到最短。</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card fade-in">
+          <div class="icon">💬</div>
+          <h3 data-i18n="features.f1.title">群組即時翻譯</h3>
+          <p data-i18n="features.f1.desc">自動偵測群組裡每則訊息的語言,即時翻成你設定的語言,不用手動複製貼上。</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="icon">🎙️</div>
+          <h3 data-i18n="features.f2.title">語音訊息也能翻</h3>
+          <p data-i18n="features.f2.desc">收到語音訊息會自動辨識文字並翻譯,先顯示原文、再接翻譯結果。</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="icon">🌐</div>
+          <h3 data-i18n="features.f3.title">一次翻多國語言</h3>
+          <p data-i18n="features.f3.desc">預設同時翻成 5 種語言,依群組成員的母語彈性調整,越多人都看得懂。</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="icon">⏱️</div>
+          <h3 data-i18n="features.f4.title">無每日則數限制</h3>
+          <p data-i18n="features.f4.desc">想聊多久就聊多久,不用擔心用超過每日訊息上限。</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="icon">✉️</div>
+          <h3 data-i18n="features.f5.title">1 對 1 私訊也適用</h3>
+          <p data-i18n="features.f5.desc">不只是群組,直接私訊 Miu 也能單獨使用翻譯功能。</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="icon">繁</div>
+          <h3 data-i18n="features.f6.title">統一輸出繁體中文</h3>
+          <p data-i18n="features.f6.desc">中文翻譯結果與語音辨識,一律統一為繁體中文,閱讀習慣不打折。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LANGUAGES -->
+  <section id="languages">
+    <div class="wrap">
+      <div class="section-head fade-in">
+        <span class="eyebrow" data-i18n="languages.eyebrow">支援語言</span>
+        <h2 data-i18n="languages.title">13 種語言,涵蓋最常用的跨國溝通情境</h2>
+        <p data-i18n="languages.sub">從跨國家庭、看護溝通到跨境買賣,涵蓋最常用的語言組合。</p>
+      </div>
+      <div class="lang-panel fade-in">
+        <div class="lang-grid" id="langGrid">
+          <div class="lang-chip"><span class="flag">🇹🇼</span><span data-i18n="lang.zh">中文(繁體)</span></div>
+          <div class="lang-chip"><span class="flag">🇺🇸</span><span data-i18n="lang.en">英文</span></div>
+          <div class="lang-chip"><span class="flag">🇯🇵</span><span data-i18n="lang.ja">日文</span></div>
+          <div class="lang-chip"><span class="flag">🇰🇷</span><span data-i18n="lang.ko">韓文</span></div>
+          <div class="lang-chip"><span class="flag">🇮🇩</span><span data-i18n="lang.id">印尼文</span></div>
+          <div class="lang-chip"><span class="flag">🇻🇳</span><span data-i18n="lang.vi">越南文</span></div>
+          <div class="lang-chip"><span class="flag">🇹🇭</span><span data-i18n="lang.th">泰文</span></div>
+          <div class="lang-chip"><span class="flag">🇲🇾</span><span data-i18n="lang.ms">馬來文</span></div>
+          <div class="lang-chip"><span class="flag">🇫🇷</span><span data-i18n="lang.fr">法文</span></div>
+          <div class="lang-chip"><span class="flag">🇩🇪</span><span data-i18n="lang.de">德文</span></div>
+          <div class="lang-chip"><span class="flag">🇪🇸</span><span data-i18n="lang.es">西班牙文</span></div>
+          <div class="lang-chip"><span class="flag">🇵🇹</span><span data-i18n="lang.pt">葡萄牙文</span></div>
+          <div class="lang-chip"><span class="flag">🇷🇺</span><span data-i18n="lang.ru">俄文</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how">
+    <div class="wrap">
+      <div class="section-head fade-in">
+        <span class="eyebrow" data-i18n="how.eyebrow">使用教學</span>
+        <h2 data-i18n="how.title">4 個步驟,馬上開始使用</h2>
+        <p data-i18n="how.sub">不用安裝任何 App,LINE 裡就能直接用。</p>
+      </div>
+      <div class="steps">
+        <div class="step-card fade-in">
+          <div class="step-num">1</div>
+          <h3 data-i18n="how.s1.title">加 Miu 為好友</h3>
+          <p data-i18n="how.s1.desc">掃描下方 QR code,把 Miu 加為 LINE 官方帳號好友。</p>
+        </div>
+        <div class="step-card fade-in">
+          <div class="step-num">2</div>
+          <h3 data-i18n="how.s2.title">邀請進群組</h3>
+          <p data-i18n="how.s2.desc">把 Miu 拉進你想要使用翻譯功能的 LINE 群組。</p>
+        </div>
+        <div class="step-card fade-in">
+          <div class="step-num">3</div>
+          <h3 data-i18n="how.s3.title">設定翻譯語言</h3>
+          <p data-i18n="how.s3.desc">在群組輸入「@Miu 翻譯小貓 中文和英文」,設定要翻成哪些語言。</p>
+        </div>
+        <div class="step-card fade-in">
+          <div class="step-num">4</div>
+          <h3 data-i18n="how.s4.title">開始自動翻譯</h3>
+          <p data-i18n="how.s4.desc">之後群組裡的文字、語音訊息都會自動即時翻譯。</p>
+        </div>
+      </div>
+      <div class="chat-demo fade-in">
+        <div class="chat-demo-head">🐱 <span data-i18n="how.demo.head">Miu 翻譯小貓 · 群組聊天示範</span></div>
+        <div class="chat-demo-body">
+          <div class="bubble"><b>🇮🇩</b><span>Bisa tolong bersihkan genangan air di balkon belakang?</span></div>
+          <div class="bubble me"><b>🇹🇼</b><span>可以幫我清理後陽台的積水嗎?</span></div>
+          <div class="bubble"><b>🎙️</b><span data-i18n="how.demo.voice">(語音)可以幫我把後陽台和前陽台的積水清理一下嗎?</span></div>
+          <div class="bubble me"><b>🇮🇩</b><span>Bisa tolong bersihkan genangan air di balkon belakang dan balkon depan?</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRIAL / STATUS -->
+  <section id="trial">
+    <div class="wrap">
+      <div class="trial-panel fade-in">
+        <div>
+          <span class="eyebrow" style="background:rgba(255,255,255,0.12); color:#fff;" data-i18n="trial.eyebrow">🐾 限量測試中</span>
+          <h2 data-i18n="trial.title">Miu 目前開放限量搶先試用</h2>
+          <p data-i18n="trial.lead">我們正在小規模測試 Miu 的正式服務,加好友私訊我們,就有機會取得試用資格,實際體驗看看群組即時翻譯有多方便。</p>
+          <ul class="trial-list">
+            <li>🐾 <span data-i18n="trial.li1">加好友後私訊我們,說明你的使用情境</span></li>
+            <li>🐾 <span data-i18n="trial.li2">符合資格會取得限時免費試用</span></li>
+            <li>🐾 <span data-i18n="trial.li3">正式定價方案規劃中,試用不代表承諾付費</span></li>
+          </ul>
+          <a class="btn btn-primary" href="https://line.me/R/ti/p/@095zareu?ts=09051537&amp;oat_content=url" target="_blank" rel="noopener" data-i18n="trial.cta">🐱 加 Miu 好友,申請試用</a>
+        </div>
+        <div class="qr-box">
+          <img src="assets/img/qr-line.png" alt="Miu 翻譯小貓 LINE 加好友 QR code">
+          <span data-i18n="trial.qr">掃描加 LINE 好友</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head fade-in">
+        <span class="eyebrow" data-i18n="faq.eyebrow">常見問題</span>
+        <h2 data-i18n="faq.title">大家常問的問題</h2>
+      </div>
+      <div class="faq fade-in">
+        <details class="faq-item" open>
+          <summary data-i18n="faq.q1">需要安裝額外的 App 嗎?</summary>
+          <p data-i18n="faq.a1">不需要,Miu 是 LINE 官方帳號機器人,把它加好友、拉進群組就能直接使用,不用另外下載 App。</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq.q2">翻譯品質怎麼樣?語音也能翻嗎?</summary>
+          <p data-i18n="faq.a2">Miu 使用 AI 模型進行文字翻譯與語音辨識,支援語音訊息自動轉文字並翻譯,適合日常對話與跨國家庭溝通情境。</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq.q3">1 對 1 私訊也能用嗎?</summary>
+          <p data-i18n="faq.a3">可以,除了群組聊天,私訊 Miu 也能直接使用翻譯功能。</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq.q4">未來會怎麼收費?</summary>
+          <p data-i18n="faq.a4">Miu 目前正在小規模測試與收集使用意見,尚未正式定價。有興趣的話歡迎加好友聊聊,我們會優先通知試用與定價資訊。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-panel fade-in">
+        <div>
+          <span class="eyebrow" data-i18n="contact.eyebrow">聯絡我們</span>
+          <h2 data-i18n="contact.title">有想法或合作提案?歡迎來聊聊</h2>
+          <p data-i18n="contact.lead">不管是使用上的問題、功能建議,還是想討論合作,都歡迎透過以下方式聯絡我們。</p>
+          <div class="contact-methods">
+            <a href="https://line.me/R/ti/p/@095zareu?ts=09051537&amp;oat_content=url" target="_blank" rel="noopener">🐱 <span data-i18n="contact.line">LINE 官方帳號:@095zareu</span></a>
+            <a href="mailto:miucat.app@gmail.com">✉️ Email:miucat.app@gmail.com</a>
+          </div>
+        </div>
+        <div class="qr-box">
+          <img src="assets/img/qr-line.png" alt="Miu 翻譯小貓 LINE 加好友 QR code">
+          <span data-i18n="trial.qr">掃描加 LINE 好友</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="paw">🐾 🐾 🐾</div>
+    <p data-i18n="footer.text">© 2026 Miu 翻譯小貓・Made with love for cross-language chats</p>
+    <div class="legal-links">
+      <a href="terms.html" data-i18n="footer.terms">服務條款</a>
+      <a href="privacy.html" data-i18n="footer.privacy">隱私權政策</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var translations = {
+    "nav.features": {en:"Features"},
+    "nav.languages": {en:"Languages"},
+    "nav.how": {en:"How it works"},
+    "nav.faq": {en:"FAQ"},
+    "nav.cta": {en:"Add on LINE"},
+    "hero.eyebrow": {en:"LINE Group Real-time Translation Bot"},
+    "hero.lead": {en:"Miu automatically detects the language in your group chat and translates it in real time — text and voice messages both supported, so cross-border conversations just work."},
+    "hero.cta1": {en:"🐱 Add Miu on LINE"},
+    "hero.cta2": {en:"See how it works"},
+    "hero.badge1": {en:"13 languages supported"},
+    "hero.badge2": {en:"Automatic voice translation"},
+    "hero.badge3": {en:"Loved by cross-border families"},
+    "features.eyebrow": {en:"Features"},
+    "features.title": {en:"One bot, every cross-language chat covered"},
+    "features.sub": {en:"For families, friends, or work teams — Miu closes the language gap."},
+    "features.f1.title": {en:"Real-time group translation"},
+    "features.f1.desc": {en:"Miu automatically detects the language of every message in the group and translates it into the languages you've set — no more copy-pasting."},
+    "features.f2.title": {en:"Voice messages too"},
+    "features.f2.desc": {en:"Voice messages are automatically transcribed and translated, showing the original text first, then the translation."},
+    "features.f3.title": {en:"Multiple languages at once"},
+    "features.f3.desc": {en:"Translates into up to 5 languages by default, flexible based on your group members' native languages."},
+    "features.f4.title": {en:"No daily message limit"},
+    "features.f4.desc": {en:"Chat as much as you want — there's no cap on daily messages."},
+    "features.f5.title": {en:"Works in 1:1 chats too"},
+    "features.f5.desc": {en:"Not just groups — you can DM Miu directly for translation as well."},
+    "features.f6.title": {en:"Always Traditional Chinese"},
+    "features.f6.desc": {en:"Chinese translation and voice transcription output is always in Traditional Chinese."},
+    "languages.eyebrow": {en:"Languages"},
+    "languages.title": {en:"13 languages covering the most common cross-border scenarios"},
+    "languages.sub": {en:"From cross-border families to caregivers and international trade — the languages you actually need."},
+    "lang.zh": {en:"Chinese (Traditional)"}, "lang.en": {en:"English"}, "lang.ja": {en:"Japanese"},
+    "lang.ko": {en:"Korean"}, "lang.id": {en:"Indonesian"}, "lang.vi": {en:"Vietnamese"},
+    "lang.th": {en:"Thai"}, "lang.ms": {en:"Malay"}, "lang.fr": {en:"French"},
+    "lang.de": {en:"German"}, "lang.es": {en:"Spanish"}, "lang.pt": {en:"Portuguese"}, "lang.ru": {en:"Russian"},
+    "how.eyebrow": {en:"How it works"},
+    "how.title": {en:"Get started in 4 simple steps"},
+    "how.sub": {en:"No extra app needed — it all happens inside LINE."},
+    "how.s1.title": {en:"Add Miu as a friend"},
+    "how.s1.desc": {en:"Scan the QR code below to add Miu as a LINE official account friend."},
+    "how.s2.title": {en:"Invite into your group"},
+    "how.s2.desc": {en:"Add Miu into the LINE group where you want translation enabled."},
+    "how.s3.title": {en:"Set your languages"},
+    "how.s3.desc": {en:"Type “@Miu Chinese and English” in the group to set which languages to translate into."},
+    "how.s4.title": {en:"Automatic translation begins"},
+    "how.s4.desc": {en:"From then on, every text and voice message in the group is translated automatically."},
+    "how.demo.head": {en:"Miu · Group chat demo"},
+    "how.demo.voice": {en:"(voice) Can you please clean up the water on the back and front balcony?"},
+    "trial.eyebrow": {en:"🐾 Limited beta"},
+    "trial.title": {en:"Miu is currently in limited early access"},
+    "trial.lead": {en:"We're running a small-scale test of Miu's full service. Add us as a friend and message us — you may get a free trial and be among the first to try real-time group translation."},
+    "trial.li1": {en:"Add us on LINE and message us about your use case"},
+    "trial.li2": {en:"If you're a good fit, you'll get a limited-time free trial"},
+    "trial.li3": {en:"Pricing is still being finalized — a trial isn't a purchase commitment"},
+    "trial.cta": {en:"🐱 Add Miu, apply for a trial"},
+    "trial.qr": {en:"Scan to add on LINE"},
+    "faq.eyebrow": {en:"FAQ"},
+    "faq.title": {en:"Frequently asked questions"},
+    "faq.q1": {en:"Do I need to install another app?"},
+    "faq.a1": {en:"No. Miu is a LINE official account bot — just add it as a friend and invite it into your group. No extra app required."},
+    "faq.q2": {en:"How good is the translation? Does it handle voice too?"},
+    "faq.a2": {en:"Miu uses AI models for text translation and voice transcription, and automatically converts voice messages to text before translating — great for everyday conversations and cross-border families."},
+    "faq.q3": {en:"Can I use it in 1:1 chats?"},
+    "faq.a3": {en:"Yes — besides group chats, you can message Miu directly for translation."},
+    "faq.q4": {en:"How will pricing work?"},
+    "faq.a4": {en:"Miu is currently in small-scale testing and we're still gathering feedback, so pricing isn't finalized yet. Add us as a friend if you're interested — we'll let you know first about trials and pricing."},
+    "contact.eyebrow": {en:"Contact us"},
+    "contact.title": {en:"Ideas or partnership proposals? Let's talk"},
+    "contact.lead": {en:"Whether it's a question, a feature suggestion, or a partnership idea, feel free to reach out through either channel below."},
+    "contact.line": {en:"LINE official account: @095zareu"},
+    "footer.text": {en:"© 2026 Miu Translate Cat · Made with love for cross-language chats"},
+    "footer.terms": {en:"Terms of Service"},
+    "footer.privacy": {en:"Privacy Policy"}
+  };
+
+  var heroTitle = {
+    zh: '讓聊天,<br>沒有<span class="accent">語言距離</span>',
+    en: 'Chat without<br><span class="accent">language distance</span>'
+  };
+
+  var lang = localStorage.getItem('miu-lang') || 'zh';
+
+  function applyLang(l){
+    lang = l;
+    document.documentElement.lang = (l === 'zh') ? 'zh-Hant' : 'en';
+    document.getElementById('langToggle').textContent = (l === 'zh') ? 'EN' : '中文';
+    document.title = (l === 'zh')
+      ? 'Miu 翻譯小貓 | LINE 群組即時翻譯機器人'
+      : 'Miu Translate Cat | LINE Real-time Group Translation Bot';
+
+    document.querySelectorAll('[data-i18n]').forEach(function(el){
+      var key = el.getAttribute('data-i18n');
+      var entry = translations[key];
+      if(!entry) return;
+      if(l === 'en' && entry.en){ el.textContent = entry.en; }
+      else if(l === 'zh' && entry.zh){ el.textContent = entry.zh; }
+      else if(l === 'zh'){ /* zh text already in HTML, restore from data attribute if replaced */ }
+    });
+
+    var heroEl = document.querySelector('[data-i18n-html="hero.title"]');
+    if(heroEl){ heroEl.innerHTML = heroTitle[l]; }
+
+    try{ localStorage.setItem('miu-lang', l); }catch(e){}
+  }
+
+  // cache original zh text before first switch
+  document.querySelectorAll('[data-i18n]').forEach(function(el){
+    var key = el.getAttribute('data-i18n');
+    if(!translations[key]) translations[key] = {};
+    translations[key].zh = el.textContent;
+  });
+
+  document.getElementById('langToggle').addEventListener('click', function(){
+    applyLang(lang === 'zh' ? 'en' : 'zh');
+  });
+
+  applyLang(lang);
+
+  // scroll fade-in
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, {threshold: 0.12});
+  document.querySelectorAll('.fade-in').forEach(function(el){ io.observe(el); });
+})();
+</script>
+
+</body>
+</html>
