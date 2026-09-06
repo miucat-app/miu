@@ -29,7 +29,7 @@
   <div class="wrap nav">
     <a class="brand" href="#top">
       <img src="assets/img/miu-icon.png" alt="Miu icon">
-      <span>Miu 翻譯小貓</span>
+      <span data-i18n="brand.name">Miu 翻譯小貓</span>
     </a>
     <nav class="links">
       <a href="#features" data-i18n="nav.features">功能特色</a>
@@ -340,7 +340,8 @@
     "contact.title": {en:"Ideas or partnership proposals? Let's talk"},
     "contact.lead": {en:"Whether it's a question, a feature suggestion, or a partnership idea, feel free to reach out through either channel below."},
     "contact.line": {en:"LINE official account: @095zareu"},
-    "footer.text": {en:"© 2026 Miu Translate Cat · Made with love for cross-language chats"},
+    "footer.text": {en:"© 2026 Miu Cat · Made with love for cross-language chats"},
+    "brand.name": {en:"Miu Cat"},
     "footer.terms": {en:"Terms of Service"},
     "footer.privacy": {en:"Privacy Policy"}
   };
@@ -358,7 +359,7 @@
     document.getElementById('langToggle').textContent = (l === 'zh') ? 'EN' : '中文';
     document.title = (l === 'zh')
       ? 'Miu 翻譯小貓 | LINE 群組即時翻譯機器人'
-      : 'Miu Translate Cat | LINE Real-time Group Translation Bot';
+      : 'Miu Cat | LINE Real-time Group Translation Bot';
 
     document.querySelectorAll('[data-i18n]').forEach(function(el){
       var key = el.getAttribute('data-i18n');
