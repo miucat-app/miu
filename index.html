@@ -464,10 +464,15 @@
   document.querySelectorAll('.fade-in').forEach(function(el){ io.observe(el); });
 
   // Windows doesn't render flag emoji (shows 2-letter codes instead) —
-  // swap the language-grid flags for Twemoji images so they look the same everywhere.
+  // swap flag emoji for Twemoji images so they look the same everywhere.
   if(window.twemoji){
-    var langGrid = document.getElementById('langGrid');
-    if(langGrid) twemoji.parse(langGrid, { className: 'emoji flag-emoji' });
+    ['langGrid'].forEach(function(id){
+      var el = document.getElementById(id);
+      if(el) twemoji.parse(el, { className: 'emoji flag-emoji' });
+    });
+    document.querySelectorAll('.chat-demo-body').forEach(function(el){
+      twemoji.parse(el, { className: 'emoji flag-emoji' });
+    });
   }
 })();
 </script>
