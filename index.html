@@ -219,57 +219,10 @@
         </div>
       </div>
       <div class="chat-demo fade-in">
-        <div class="chat-demo-head">
-          <img class="chat-demo-avatar" src="assets/img/miu-icon.png" alt="Miu">
-          <span data-i18n="how.demo.head">Miu 翻譯小貓・群組聊天室</span>
-          <span class="chat-demo-menu" aria-hidden="true">•••</span>
-        </div>
-        <div class="chat-demo-body">
-          <div class="msg-row row-me">
-            <div class="bubble cmd"><span>@Miu 翻譯小貓 中文、日文、英文</span></div>
-          </div>
-          <div class="msg-row">
-            <img class="avatar" src="assets/img/miu-icon.png" alt="Miu">
-            <div class="msg-col">
-              <span class="sender-name">Miu 翻譯小貓</span>
-              <div class="bubble bot">
-                <span>✅ 設定好囉!翻譯語言:<br><b>🇹🇼</b> 中文、<b>🇯🇵</b> 日文、<b>🇺🇸</b> 英文<br>之後這裡的訊息 Miu 都會自動幫大家翻譯~</span>
-              </div>
-            </div>
-          </div>
-          <div class="msg-row">
-            <span class="avatar avatar-person">🧑</span>
-            <div class="msg-col">
-              <span class="sender-name">朋友A</span>
-              <div class="bubble friend"><span>今度の週末、一緒にご飯食べに行かない?</span></div>
-            </div>
-          </div>
-          <div class="msg-row">
-            <img class="avatar" src="assets/img/miu-icon.png" alt="Miu">
-            <div class="msg-col">
-              <span class="sender-name">Miu 翻譯小貓</span>
-              <div class="bubble bot">
-                <span><b>🇹🇼</b>:<br>這個週末要不要一起去吃飯?<br><b>🇺🇸</b>:<br>Do you want to go eat together this weekend?</span>
-              </div>
-            </div>
-          </div>
-          <div class="msg-row row-me">
-            <div class="bubble voice">
-              <span class="voice-play">▶</span>
-              <span class="voice-wave">▁▃▅▇▅▃▁▃▅▇▅▃▁</span>
-              <span class="voice-time">0:06</span>
-            </div>
-          </div>
-          <div class="msg-row">
-            <img class="avatar" src="assets/img/miu-icon.png" alt="Miu">
-            <div class="msg-col">
-              <span class="sender-name">Miu 翻譯小貓</span>
-              <div class="bubble bot">
-                <span><b>🎙️</b>:好啊,我發現一家評價很好的拉麵店,要不要去試試看?<br><b>🇯🇵</b>:<br>いいね!評判の良いラーメン屋を見つけたんだね。行ってみる?<br><b>🇺🇸</b>:<br>Sounds good! I found a highly-rated ramen shop. Should we give it a try?</span>
-              </div>
-            </div>
-          </div>
-        </div>
+        <picture>
+          <source srcset="assets/img/chat-demo.webp" type="image/webp">
+          <img src="assets/img/chat-demo.png" alt="Miu 翻譯小貓群組聊天室示範:設定中文、日文、英文翻譯後,朋友傳來日文訊息,Miu 自動翻譯成中文與英文;語音訊息也會自動轉成文字並翻譯成其他語言">
+        </picture>
       </div>
     </div>
   </section>
@@ -419,7 +372,6 @@
     "how.s3.title": {en:"Set your languages"},
     "how.s4.title": {en:"Automatic translation begins"},
     "how.s4.desc": {en:"From then on, every text and voice message in the group is translated automatically."},
-    "how.demo.head": {en:"Miu Cat・Group Chat Room"},
     "trial.eyebrow": {en:"🐾 Limited beta"},
     "trial.title": {en:"Miu is currently in limited early access"},
     "trial.lead": {en:"We're running a small-scale test of Miu's full service. Add us as a friend and message us — you may get a free trial and be among the first to try real-time group translation."},
@@ -512,13 +464,8 @@
   // Windows doesn't render flag emoji (shows 2-letter codes instead) —
   // swap flag emoji for Twemoji images so they look the same everywhere.
   if(window.twemoji){
-    ['langGrid'].forEach(function(id){
-      var el = document.getElementById(id);
-      if(el) twemoji.parse(el, { className: 'emoji flag-emoji' });
-    });
-    document.querySelectorAll('.chat-demo-body').forEach(function(el){
-      twemoji.parse(el, { className: 'emoji flag-emoji' });
-    });
+    var langGrid = document.getElementById('langGrid');
+    if(langGrid) twemoji.parse(langGrid, { className: 'emoji flag-emoji' });
   }
 })();
 </script>
