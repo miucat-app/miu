@@ -136,6 +136,7 @@ nav.links a:hover{ color: var(--ink); }
   padding: 14px 16px; box-shadow: var(--shadow-sm); font-weight:600; font-size:14.5px;
 }
 .lang-chip .flag{ font-size:20px; }
+.lang-chip .flag img.emoji{ width:20px; height:20px; vertical-align:-3px; }
 .lang-note{ text-align:center; margin-top:24px; color: var(--ink-soft); font-size:14px; }
 
 /* How it works */
