@@ -196,6 +196,22 @@ nav.links a:hover{ color: var(--ink); }
 .faq-item[open] summary::after{ content:"–"; }
 .faq-item p{ margin: 12px 0 0; color: var(--ink-soft); font-size:14.5px; }
 
+/* Target audience */
+.audience-grid{
+  display:grid; grid-template-columns: repeat(4,1fr); gap:20px;
+}
+.audience-card{
+  background: var(--surface); border-radius: var(--radius-md);
+  padding: 24px 20px; box-shadow: var(--shadow-sm);
+  border: 1px solid var(--line); text-align:center;
+}
+.audience-icon{
+  width:48px; height:48px; border-radius: 14px; background: var(--mint);
+  display:flex; align-items:center; justify-content:center; font-size:22px; margin: 0 auto 14px;
+}
+.audience-card h3{ font-size:15.5px; font-weight:700; margin-bottom:6px; }
+.audience-card p{ font-size:13.5px; color: var(--ink-soft); margin:0; }
+
 /* Contact / footer */
 .contact-panel{
   background: var(--peach); border-radius: var(--radius-lg); padding: 48px;
@@ -204,7 +220,7 @@ nav.links a:hover{ color: var(--ink); }
 .contact-panel h2{ font-size: clamp(24px,3vw,30px); margin-bottom:12px; }
 .contact-panel p{ color: var(--ink-soft); margin-bottom: 20px; }
 .contact-methods{ display:flex; flex-direction:column; gap:12px; }
-.contact-methods a{ text-decoration:none; font-weight:600; display:flex; align-items:center; gap:10px; }
+.contact-methods a{ text-decoration:underline; font-weight:600; display:flex; align-items:center; gap:10px; }
 
 footer{
   padding: 36px 0; text-align:center; color: var(--ink-faint); font-size:13.5px;
@@ -243,6 +259,7 @@ footer .legal-links a:hover{ color: var(--ink-soft); }
   .hero-visual{ order:-1; }
   .hero-visual img{ max-width: 280px; }
   .features-grid{ grid-template-columns: repeat(2,1fr); }
+  .audience-grid{ grid-template-columns: repeat(2,1fr); }
   .lang-grid{ grid-template-columns: repeat(2,1fr); }
   .steps{ grid-template-columns: repeat(2,1fr); }
   .trial-panel{ grid-template-columns:1fr; }
@@ -251,6 +268,7 @@ footer .legal-links a:hover{ color: var(--ink-soft); }
 }
 @media (max-width: 520px){
   .features-grid{ grid-template-columns: 1fr; }
+  .audience-grid{ grid-template-columns: 1fr; }
   .lang-grid{ grid-template-columns: 1fr 1fr; }
   .steps{ grid-template-columns: 1fr; }
   .hero-ctas .btn{ width:100%; }
