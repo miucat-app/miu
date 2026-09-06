@@ -154,10 +154,7 @@ img.emoji{ height:1em; width:1em; margin:0 .05em 0 .1em; vertical-align:-0.1em; 
 .step-card h3{ font-size:16.5px; font-weight:700; margin-bottom:8px; }
 .step-card p{ font-size:14px; color: var(--ink-soft); margin:0; }
 
-.chat-demo{
-  max-width: 480px; margin: 0 auto; border-radius: var(--radius-lg);
-  box-shadow: var(--shadow); overflow:hidden; line-height:0;
-}
+.chat-demo{ max-width: 520px; margin: 0 auto; }
 .chat-demo img{ width:100%; display:block; }
 
 /* Trial / status */
