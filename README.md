@@ -2,7 +2,7 @@
 
 Miu 翻譯小貓(LINE 群組即時翻譯機器人)的官方介紹網站,使用純 HTML/CSS/JS 製作,透過 GitHub Pages 發布。
 
-- 線上網址(啟用 Pages 後):`https://clairelin1014.github.io/miu/`
+- 線上網址(啟用 Pages 後):`https://miucat-app.github.io/miu/`
 - 支援中 / 英文切換(右上角語言按鈕,記得使用者上次的選擇)
 - 內容涵蓋:功能特色、支援語言、使用教學、限量試用資訊、常見問題、聯絡方式
 
@@ -20,14 +20,14 @@ miu/
 1. 到 GitHub 建立一個新的 **public repository**,名稱請設為 `miu`(這樣網址才會是 `.../miu/`)。
 2. 在這個資料夾(`miu/`)裡執行:
    ```bash
-   git remote add origin https://github.com/clairelin1014/miu.git
+   git remote add origin https://github.com/miucat-app/miu.git
    git branch -M main
    git push -u origin main
    ```
 3. 到 GitHub 上該 repo 的 **Settings → Pages**。
 4. 在 **Build and deployment → Source** 選擇 **Deploy from a branch**。
 5. **Branch** 選 `main`,資料夾選 `/ (root)`,按 **Save**。
-6. 等 1-2 分鐘,重新整理該頁面,會出現網址:`https://clairelin1014.github.io/miu/`
+6. 等 1-2 分鐘,重新整理該頁面,會出現網址:`https://miucat-app.github.io/miu/`
 
 之後每次要更新網站內容,只要修改 `index.html` 或圖片,`git add / commit / push` 到 `main`,GitHub Pages 就會自動重新部署。
 
