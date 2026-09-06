@@ -29,7 +29,7 @@ body{
 }
 img{ max-width:100%; display:block; }
 a{ color: inherit; }
-h1,h2,h3{ font-family:"Noto Serif TC","Noto Sans TC",serif; margin:0; }
+h1,h2,h3{ font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif; margin:0; }
 .wrap{ max-width: 1140px; margin: 0 auto; padding: 0 24px; }
 section{ padding: 88px 0; }
 .eyebrow{
@@ -71,7 +71,7 @@ header.site{
 }
 .brand{ display:flex; align-items:center; gap:10px; text-decoration:none; }
 .brand img{ width:auto; height:42px; object-fit: contain; }
-.brand span{ font-weight:900; font-size:19px; color: var(--ink); font-family:"Noto Serif TC",serif; }
+.brand span{ font-weight:900; font-size:19px; color: var(--ink); font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif; }
 nav.links{ display:flex; align-items:center; gap: 28px; }
 nav.links a{ text-decoration:none; font-weight:500; font-size:15px; color: var(--ink-soft); }
 nav.links a:hover{ color: var(--ink); }
