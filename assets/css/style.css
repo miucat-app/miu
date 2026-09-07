@@ -262,4 +262,5 @@ footer .legal-links a:hover{ color: var(--ink-soft); }
   .lang-grid{ grid-template-columns: 1fr 1fr; }
   .steps{ grid-template-columns: 1fr; }
   .hero-ctas .btn{ width:100%; }
+  .legal-hero.wrap, .legal-body.wrap{ padding-left: 28px; padding-right: 28px; }
 }
