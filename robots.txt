@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://miucat-app.github.io/miu/sitemap.xml
